@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Image Guessing Game">
+    <meta name="author" content="Max-IT AS">
+	<script> $page = "gamescreen"; </script>
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link th:href="@{/css/style.css}"  rel="stylesheet" type="text/css" />
+    <link th:href="@{/css/main.css}" rel="stylesheet">
+		<title> Image Guessing Game </title>
+	</head>
+	<body class="text-center" style="background-color: #c5c3c7;">
+	<div class="wrapper fadeInDown">
+	<div id="formContent">
+		<div class="fadeIn first" id="formHeader">
+			<h1> Image Guessing Game </h1>
+			<div id="successAlert" class="alert alert-success d-none" role="alert">
+  				Congratulations! You have won the game!
+			</div>
+			<div id="lostAlert" class="alert alert-error d-none" role="alert">
+  				You have lost the game!
+			</div>
+			<div class="input-group d-none" id="picChooser">
+				<select onchange="changePicture()" id="dropOperator" name="selectedlabel">
+					<option value="0">Select a label </option>
+					<option th:each="label : ${listlabels}" th:value="${label}" th:text="${label}" th:selected="${label==selected}"></option>
+				</select>
+				<button onclick="sendPictureID()" class="btn btn-success form-control" name="login_btn"> Submit </button>
+			</div>
+			<div class="input-group d-none" id="picGuess">
+				<input type="text" id="txtguess" class="fadeIn second" name="guess" autocomplete="username" placeholder="Make a Guess" required="" autofocus="">
+				<button id="sendGuess" type="submit" onclick="sendGuess()" class="btn btn-success form-control" name="sendGuess"> Submit </button>
+			</div>
+			<div id="gameOverDiv" class="fadeIn first d-none">
+      			<button id="leaderboard_btn" onclick="goLeaderboard()" class="btn btn-success btn-lg custom-btn fadeIn fourth" name="ai_btn">Leaderboard</button>
+				<button id="newGame_btn" onclick="goNewGame()" class="btn btn-success btn-lg custom-btn fadeIn fourth" name="ai_btn">New game</button>
+			</div>
+			
+		<div class="container d-none" id="pictureContainer">
+			<div class="row">
+				<div class="col-12">
+					<div th:each="image,iter : ${listimages}" class="alpha-mask">
+						<img th:id="'img'+${iter.index}" th:attr="src=@{|${image}|}" onerror="this.style.display='none'"/>
+					</div>
+					<canvas id="myCanvas" style="border:1px solid #000000;">
+					</canvas>
+					<button type="submit" onclick="sendSegment()" class="btn btn-success form-control d-none" id="sendSegment" name="btnSendSegment"> Submit </button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script th:src="@{/js/imgGuess.js}" crossorigin="anonymous"></script>
+  </body>
+</html>

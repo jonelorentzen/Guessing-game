@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Image Guessing Game">
+    <meta name="author" content="Max-IT AS">
+
+	<script> $page = "login"; </script>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link th:href="@{/css/style.css}"  rel="stylesheet" type="text/css" />
+    <link th:href="@{/css/main.css}" rel="stylesheet">
+		<title> Image Guessing Game </title>
+	</head>
+	<body class="text-center" style="background-color: #c5c3c7;">
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+	<div class="fadeIn first" id="formHeader">
+	  <h1>Image Guessing Game login</h1>
+    </div>
+
+    <!-- Login Form -->
+    <div id="loginForm" class="fadeIn first">
+	  <input type="text" id="login" class="fadeIn second" name="username" autocomplete="username" placeholder="Username" required="" autofocus="">
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password" autocomplete="current-password">
+	  <button type="submit" onclick="sendLogin()" class="btn btn-success btn-lg custom-btn fadeIn fourth" name="login_btn">Login</button>
+	  <!-- <a href="register.php" class="btn btn-primary btn-lg custom-btn fadeIn fourth">Register?</a>	-->
+	</div>
+    <div id="lobbyDiv" class="fadeIn first d-none">
+      <p> Waiting for another player to join the game. Press the button if you want to play with an AI proposer instead. </p>
+	  <button id="ai_btn" onclick="sendAIReq()" class="btn btn-success btn-lg custom-btn fadeIn fourth" name="ai_btn">Request AI</button>
+	</div>
+	
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script th:src="@{/js/imgGuess.js}" crossorigin="anonymous"></script>
+    <script th:src="@{/js/js.cookie.js}" crossorigin="anonymous"></script>
+  </body>
+</html>

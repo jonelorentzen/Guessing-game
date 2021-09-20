@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "imagegame-256019",
+  "private_key_id": "aecae337f577f33d8857ac8848d90b1198a57a02",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCvhU8FSErM+y2d\nObpgr5e7RKpeNwj79x7ALb2Mhh4SdoA5ExJKSoh0sBJcwm9qQ7so3WF7RKX0yFLo\nkO+zdMV3CXcarjONMcnBw1deRmTtrr0bpYOKYqGS78H4DFnManS4Q5hgRRJ8MMqd\nAs0oP0JMSYkUq3rKDGpRFEQfrc2mp3TcbMvKNXIFA27UMBfUARHLtWSONJoePFho\nuaw8IvtyuCKoE2ocku06+hHJ5jI6qLDe9P5Q29CKbTBlGMScg1UJxhajz8kInIzM\n5sJ8LZqmCEODWU6rGzvp/rU4k1iTfBiilKEgQUaXyYrNqaTMfofAPDkn3hoMt/ci\nRWvBOrj7AgMBAAECggEATV8k9c2n15MzyNaNP5i3+J+swEpfZf7J6epf36WxdO8S\n19X93ozbeSCyf3xgc8X2p21rTtT0mSKDVayqVX+4miAshjDbXbbgWs864L6EODgq\neZjtEuAmnGifJzJ+lTsqR53YejuIigFSF4OIH2E/XvSdfmSXBKETbrlRzGsnt/nm\nIMKkJjX3vqJxsjEaxhQxWMPCBwloR6bvu6Ao+T/TY29zhFWbEcLH35P9nk/gkzHX\n8SJXK5KIZzTwE3T5lkLMZgaBxRorogCAoVXQXL4Mjcx6/T8EHsamCqbnhMeTFJR3\nGHP0M0McHSj9OIyekXrpyP+FhZhLG7ToXzOmePsiiQKBgQDvqhfgwNH4EMQA3Yvz\nk8lKC3fBvpqmyU/dHZA9r21mkkPgKgGeC30KJ6QU2xfT96fNq7huHfRc28M8NwWl\ngr+kYiYf56XhzZXiJqFo3I1cqNjAkVHaf2E8zw6cVjVBAWRbojt88jCvNJXJwRH1\nS1Iuqbdg/r4Z2Gh6GeOaeunhMwKBgQC7e/i5tPPAu7TMtTKLN9b75Vwra1p9183S\nhjFTkC4oH5+q4GuqVlIQMcDxWlEGgLFGojEEx5CUcMlWlhIwztaZSNca+hrk+5GW\n2amtMulHefdmHO5prScu6fq5kea2k8+5lyi6/CRCnhASC8h6w+9QJu6OQYWd1aB3\nmGfK/INZGQKBgCDmw/Jp5ilc+9t2jrD4t+h/XIhvh0GgX2NmnJerTqSHLeRHQAOX\nZioPuRnX3hSOai31BhOv7w0UamAI2bCYG4EQrFUy8vXlyE7MqNoBdTKkR2VgTdFm\nLU4wyruxpgvvifx+cBY+FWroGCwjYji/h1+6kt8w+Z4ItIcWqMVbXGI7AoGAP/Rm\nQFMt400ku8AD4eHGgF8ZNeaFE/CN0YbdRLgmRqGjAdNUZuLTU5rlSm+YvDMiRgoF\n1q+M7lYbGGJRCj1Ejz19w0IV8o6ud1sAuohnc25zqm2sFnhuqV4/nRXcMePyNEkQ\nJ9jjNaZdrQo/9UDpXdop/nTzc4fwGVvv7Bp/Y+ECgYAGgocQ9cvjEssGh0P11zD5\n4sutMCS5tWm2RMopiSN+jR+GjL7gHT2gMF3fRtxIYNI0ca/7C0tcS8XaXf3/rPrz\nZyTxRxBzRTOHxFCRMI/N9Yj+PSV+lp8/y5o+iHF6aQ7kbUUqlgmLE0VSIgj2e+/Q\nW82Sntywv3K4zvr1irHYqA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "continuous-integration-test@imagegame-256019.iam.gserviceaccount.com",
+  "client_id": "107022102859720020696",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/continuous-integration-test%40imagegame-256019.iam.gserviceaccount.com"
+}
